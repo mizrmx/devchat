@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/4a49f8ef2b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>DevChat</title>
+</head>
+<body>
+    <div class="chat-container">
+        <header class="chat-header">
+            <h1><i class="fas fa-terminal"></i> DevChat</h1>
+            <a href="index.html" class="btn-sala">Dejar Sala</a>
+        </header>
+
+        <main class="chat-main">
+            <div class="chat-sidebar">
+                <h3><i class="fas fa-comments"></i> Nombre de la sala</h3>
+                <h2 id="room-name">JavaScript</h2>
+                <h3><i class="fas fa-users"></i> Usuarios</h3>
+                <ul id="users">
+                    <li>Pepe</li>
+                    <li>Maria</li>
+                    <li>Mark</li>
+                    <li>Paulina</li>
+                </ul>
+            </div>
+
+            <div class="chat-messages">
+                <div class="message">
+                    <p class="meta">Pepe <span>8:43am</span></p>
+                    <p class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit in doloremque ea, fuga aliquam molestiae.</p>
+                </div>
+
+                <div class="message">
+                    <p class="meta">Maria <span>8:50am</span></p>
+                    <p class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit in doloremque ea, fuga aliquam molestiae.</p>
+                </div>
+            </div>
+        </main>
+
+        <div class="chat-form-container">
+            <form id="chat-form">
+                <input id="msg" type="text" placeholder="Envia mensaje" required autocomplete="off">
+                <button class="btn-send"><i class="fas fa-paper-plane"></i> Enviar</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
